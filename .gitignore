@@ -37,3 +37,7 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# IDE log and cache files
+.vscode/
+.idea/
