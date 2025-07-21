@@ -33,6 +33,11 @@ yarn-error.*
 # local env files
 .env*.local
 
+# package manager lock files
+package-lock.json
+bun.lock
+yarn.lock
+
 # typescript
 *.tsbuildinfo
 
