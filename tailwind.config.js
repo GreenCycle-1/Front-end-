@@ -1,15 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // Ensure this points to your source code
-    './app/**/*.{js,tsx,ts,jsx}',
-    // If you use a `src` directory, add: './src/**/*.{js,tsx,ts,jsx}'
-    // Do the same with `components`, `hooks`, `styles`, or any other top-level directories
+    "./App.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
-	presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          DEFAULT: "#1ED760",
+          dark: "#1CB752",
+          darker: "#179B47",
+          light: "#4EEA89",
+          lighter: "#B9F5D0",
+        },
+      },
+    },
   },
+  presets: [require("nativewind/preset")], // 👈 This is the missing piece!
   plugins: [],
 };
-

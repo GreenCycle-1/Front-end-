@@ -41,3 +41,6 @@ app-example
 # IDE log and cache files
 .vscode/
 .idea/
+
+# expo log and cache files
+.expo/
